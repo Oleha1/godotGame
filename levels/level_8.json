@@ -1,0 +1,244 @@
+{
+	"camera":{
+		"position": {
+			"x": 0,
+			"y": 10,
+			"z": 6
+		},
+		"rotate": {
+			"x": -45,
+			"y": -44,
+			"z": 0
+		}
+	},
+	"player":{
+		"position": {
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"boxes":{
+		"box_1": {
+			"type": "box",
+			"push": false,
+			"fill": true,
+			"color": {
+				"r":100,
+				"g":100,
+				"b":100,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"endPosition": {
+					"x": 3,
+					"y": 0,
+					"z": 3
+				}
+			},
+		},
+		"box_2": {
+			"type": "box",
+			"push": false,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":0,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 3,
+					"y": 1,
+					"z": 0
+				},
+				"endPosition": {
+					"x": 3,
+					"y": 1,
+					"z": 0
+				}
+			},
+		},
+		"box_3": {
+			"type": "box",
+			"push": false,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":0,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 0,
+					"y": 1,
+					"z": 3
+				},
+				"endPosition": {
+					"x": 0,
+					"y": 1,
+					"z": 3
+				}
+			},
+		},
+		"box_4": {
+			"type": "box",
+			"push": false,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":0,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 3,
+					"y": 1,
+					"z": 3
+				},
+				"endPosition": {
+					"x": 3,
+					"y": 1,
+					"z": 3
+				}
+			},
+		},
+		"box_5": {
+			"type": "box",
+			"push": true,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":125,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 0,
+					"y": 1,
+					"z": 0
+				},
+				"endPosition": {
+					"x": 0,
+					"y": 1,
+					"z": 2
+				}
+			},
+		},
+		"box_6": {
+			"type": "box",
+			"push": true,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":125,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 1,
+					"y": 1,
+					"z": 0
+				},
+				"endPosition": {
+					"x": 2,
+					"y": 1,
+					"z": 0
+				}
+			},
+		},
+		"box_7": {
+			"type": "box",
+			"push": true,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":125,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 2,
+					"y": 1,
+					"z": 1
+				},
+				"endPosition": {
+					"x": 2,
+					"y": 1,
+					"z": 2
+				}
+			},
+		},
+		"box_8": {
+			"type": "box",
+			"push": true,
+			"fill": true,
+			"color": {
+				"r":125,
+				"g":125,
+				"b":0,
+				"a":255,
+			},
+			"fillPosition": {
+				"startPosition": {
+					"x": 1,
+					"y": 1,
+					"z": 2
+				},
+				"endPosition": {
+					"x": 1,
+					"y": 1,
+					"z": 2
+				}
+			},
+		},
+		"box_9": {
+			"type": "portal",
+			"color": {
+				"r":104,
+				"g":246,
+				"b":243,
+				"a":255,
+			},
+			"portalPosition": {
+				"startPosition": {
+					"x": 2,
+					"y": 1,
+					"z": 3
+				},
+				"endPosition": {
+					"x": 3,
+					"y": 2,
+					"z": 3
+				}
+			},
+		},
+		"box_10": {
+			"type": "portal",
+			"color": {
+				"r":115,
+				"g":115,
+				"b":115,
+				"a":255,
+			},
+			"portalPosition": {
+				"startPosition": {
+					"x": 0,
+					"y": 2,
+					"z": 3
+				},
+			},
+		},
+	}
+}

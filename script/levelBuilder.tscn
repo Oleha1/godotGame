@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl3h4gbf8isoe"]
+
+[ext_resource type="Script" path="res://script/levelBuilder.gd" id="1_k1kgd"]
+
+[node name="levelBuilder" type="StaticBody3D"]
+script = ExtResource("1_k1kgd")

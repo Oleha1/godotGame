@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bao5iyobfx7yi"]
+
+[ext_resource type="Script" path="res://script/camera.gd" id="1_2j57l"]
+[ext_resource type="PackedScene" uid="uid://56r0cqv1xud5" path="res://script/player.tscn" id="2_ekhmm"]
+[ext_resource type="PackedScene" uid="uid://dl3h4gbf8isoe" path="res://script/levelBuilder.tscn" id="3_bkdle"]
+[ext_resource type="PackedScene" uid="uid://b6dbeid4ok4mb" path="res://gui/hud.tscn" id="4_oqy7b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c18ox"]
+size = Vector3(1, 1.00043, 1)
+
+[node name="main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 6, 4)
+light_energy = 3.133
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+fov = 90.0
+script = ExtResource("1_2j57l")
+
+[node name="player" parent="." instance=ExtResource("2_ekhmm")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.25, 0)
+
+[node name="Area3D" type="Area3D" parent="player"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player/Area3D"]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, -0.24984, 0)
+shape = SubResource("BoxShape3D_c18ox")
+
+[node name="levelBuilder" parent="." instance=ExtResource("3_bkdle")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("4_oqy7b")]
+offset_right = 384.0
+offset_bottom = 216.0
+scale = Vector2(0.75, 0.75)
+
+[connection signal="body_entered" from="player/Area3D" to="player" method="_on_area_3d_body_entered"]
